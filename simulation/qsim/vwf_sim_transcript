@@ -1,0 +1,171 @@
+Determining the location of the ModelSim executable...
+
+Using: c:/intelfpga_lite/21.1/questa_fse/win64/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both Questa Intel FPGA Edition and ModelSim executables are available, Questa Intel FPGA Edition will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off adder01 -c adder01 --vector_source="C:/eda_workspace/adder01/adder01.vwf" --testbench_file="C:/eda_workspace/adder01/simulation/qsim/adder01.vwf.vt"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Copyright (C) 2021  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Mon Feb 28 13:32:06 2022
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off adder01 -c adder01 --vector_source=C:/eda_workspace/adder01/adder01.vwf --testbench_file=C:/eda_workspace/adder01/simulation/qsim/adder01.vwf.vt
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+Completed successfully. 
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/eda_workspace/adder01/simulation/qsim/" adder01 -c adder01
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+    Info: Copyright (C) 2021  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Mon Feb 28 13:32:07 2022
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/eda_workspace/adder01/simulation/qsim/ adder01 -c adder01
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file adder01.vo in folder "C:/eda_workspace/adder01/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4726 megabytes
+    Info: Processing ended: Mon Feb 28 13:32:08 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/eda_workspace/adder01/simulation/qsim/adder01.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+c:/intelfpga_lite/21.1/questa_fse/win64//vsim -c -do adder01.do
+
+Reading pref.tcl
+
+
+# 2021.2
+
+
+# do adder01.do
+
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+
+# Start time: 13:32:09 on Feb 28,2022
+# vlog -work work adder01.vo 
+
+# -- Compiling module adder01
+
+# 
+# Top level modules:
+
+# 	adder01
+
+# End time: 13:32:09 on Feb 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# Questa Intel Starter FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+
+# Start time: 13:32:09 on Feb 28,2022
+# vlog -work work adder01.vwf.vt 
+
+# -- Compiling module adder01_vlg_vec_tst
+
+# 
+
+# Top level modules:
+# 	adder01_vlg_vec_tst
+
+# End time: 13:32:09 on Feb 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.adder01_vlg_vec_tst -voptargs="+acc" 
+# Start time: 13:32:09 on Feb 28,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+
+# Loading work.adder01_vlg_vec_tst(fast)
+# Loading work.adder01(fast)
+# Loading cyclonev_ver.cyclonev_io_obuf(fast)
+# Loading cyclonev_ver.cyclonev_io_ibuf(fast)
+# Loading cyclonev_ver.cyclonev_lcell_comb(fast)
+# Loading cyclonev_ver.cyclonev_lcell_comb(fast__1)
+# Loading cyclonev_ver.cyclonev_lcell_comb(fast__2)
+
+# after#26
+
+# ** Note: $finish    : adder01.vwf.vt(51)
+#    Time: 8 us  Iteration: 0  Instance: /adder01_vlg_vec_tst
+
+# End time: 13:32:10 on Feb 28,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/eda_workspace/adder01/adder01.vwf...
+
+Reading C:/eda_workspace/adder01/simulation/qsim/adder01.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to C:/eda_workspace/adder01/simulation/qsim/adder01_20220228133210.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

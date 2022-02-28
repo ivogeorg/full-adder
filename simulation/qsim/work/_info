@@ -1,0 +1,78 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/eda_workspace/adder01/simulation/qsim
+T_opt
+!s110 1646079865
+VWM`b<01gk7Y`jgBch[Okc2
+Z2 04 19 4 work adder01_vlg_vec_tst fast 0
+=1-3814287418c6-621d2f79-129-1e74
+Z3 !s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2;73
+R1
+T_opt1
+Z6 !s110 1646080329
+V53=CgE8a1BS^g92^KH4gF1
+R2
+=1-3814287418c6-621d3149-222-2258
+R3
+o-quiet -auto_acc_if_foreign -work work -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc
+R4
+n@_opt1
+R5
+vadder01
+R6
+!i10b 1
+!s100 lod9;h:iNoR4J`LXCi_WL3
+IjLA;hbR09BQ69VIFfW:U23
+R1
+w1646080328
+8adder01.vo
+Fadder01.vo
+!i122 6
+L0 32 176
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z9 !s108 1646080329.000000
+!s107 adder01.vo|
+!s90 -work|work|adder01.vo|
+!i113 0
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
+vadder01_vlg_vec_tst
+R6
+!i10b 1
+!s100 T?XhDVzCAzDYR6GA86CUa3
+IVWPE_]3DR]JO@<;Gma2Xh3
+R1
+w1646080327
+8adder01.vwf.vt
+Fadder01.vwf.vt
+!i122 7
+L0 30 48
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 adder01.vwf.vt|
+!s90 -work|work|adder01.vwf.vt|
+!i113 0
+R10
+R4

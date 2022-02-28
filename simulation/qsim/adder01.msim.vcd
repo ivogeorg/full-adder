@@ -1,0 +1,103 @@
+$comment
+	File created using the following command:
+		vcd file adder01.msim.vcd -direction
+$end
+$date
+	Mon Feb 28 13:32:10 2022
+$end
+$version
+	Questa Intel Starter FPGA Edition Version 2021.2
+$end
+$timescale
+	1ps
+$end
+
+$scope module adder01_vlg_vec_tst $end
+$var reg 1 ! A $end
+$var reg 1 " B $end
+$var reg 1 # C_in $end
+$var wire 1 $ C_out $end
+$var wire 1 % S $end
+
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 - A~input_o $end
+$var wire 1 . B~input_o $end
+$var wire 1 / C_in~input_o $end
+$var wire 1 0 inst4~combout $end
+$var wire 1 1 inst2~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+1'
+x(
+1)
+1*
+1+
+0,
+0-
+0.
+0/
+00
+01
+$end
+#1000000
+1#
+1/
+10
+1%
+#2000000
+1"
+0#
+1.
+0/
+#3000000
+1#
+1/
+11
+00
+0%
+1$
+#4000000
+1!
+0"
+0#
+1-
+0.
+0/
+01
+10
+1%
+0$
+#5000000
+1#
+1/
+11
+00
+0%
+1$
+#6000000
+1"
+0#
+1.
+0/
+#7000000
+1#
+1/
+10
+1%
+#8000000

@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/eda_workspace/adder01/adder01.bdf
+source_file = 1, C:/eda_workspace/adder01/db/adder01.cbx.xml
+design_name = adder01
+instance = comp, \S~output , S~output, adder01, 1
+instance = comp, \C_out~output , C_out~output, adder01, 1
+instance = comp, \A~input , A~input, adder01, 1
+instance = comp, \B~input , B~input, adder01, 1
+instance = comp, \C_in~input , C_in~input, adder01, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, adder01, 1
